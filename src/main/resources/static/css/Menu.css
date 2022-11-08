@@ -23,6 +23,11 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
     background-size: cover;
 }
 
+.paquetes {
+    background-image: url("/images/paquetes.jpg");
+    background-size: cover;
+}
+
 .contactenos {
     background-image: url("/images/llamada.jpg");
     background-size: cover;
@@ -48,7 +53,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
 
 .nav-menu-item {
     font-size: 18px;
-    margin: 0 10px;
+
     line-height: 80px;
     width: max-content;
 }
@@ -66,7 +71,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
 .nav {
     display: flex;
     justify-content: space-between;
-    max-widht: 992px;
+    max-width: 992px;
     margin: 0 auto;
 }
 
