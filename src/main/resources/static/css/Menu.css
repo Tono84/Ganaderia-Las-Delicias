@@ -55,6 +55,13 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
     font-size: 18px;
     margin: 0 10px;
     line-height: 80px;
+
+}
+
+.nav-menu-icon {
+    margin: 0 10px;
+    right: 5%;
+    line-height: 80px;
     width: max-content;
 }
 
@@ -71,7 +78,6 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
 .nav {
     display: flex;
     justify-content: space-between;
-    max-width: 992px;
     margin: 0 auto;
 }
 
@@ -104,4 +110,10 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
     position:absolute;
 }
 
+.formRegistro {
+    left: 5%;
+    top: 12%;
+    text-decoration: red;
+    position:absolute;
+}
 
