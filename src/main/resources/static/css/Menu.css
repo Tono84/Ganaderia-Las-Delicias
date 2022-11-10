@@ -125,3 +125,30 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
     width: 100%;
     overflow: auto;
 }
+.mapa {
+    position: fixed;
+    top: 80px;
+    bottom: 20px;
+    left: 40%;
+    width: 100%;
+    overflow: auto;
+}
+
+.lista {
+    position: fixed;
+    top: 100px;
+    bottom: 20px;
+    left: 80%;
+    width: 100%;
+    overflow: auto;
+}
+
+.paquete1 {
+    position: fixed;
+    top: 100px;
+    bottom: 20px;
+    left: 60%;
+    width: 100%;
+    overflow: auto;
+    margin: 0 auto;
+}
