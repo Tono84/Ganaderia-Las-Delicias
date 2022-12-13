@@ -14,9 +14,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <body class="registro">
             <header class="header">
                 <nav class="nav">
-                    <a href="index.html" class="logo nav-link">Ganaderia las Delicias</a>
+                    <a href="1index.html" class="logo nav-link">Ganaderia las Delicias</a>
                     <ul class="nav-menu">
-                        <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="1index.html">Inicio</a></li>
                         <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="paquetes.html">Paquetes</a></li>
                         <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="contactenos.html">Contactenos</a></li> 
                         <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="mapa.html"><img src="/icons/marcador-de-posicion.png" alt=""/></a></li>
@@ -25,6 +25,28 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                     </ul>
                 </nav>
             </header>
-        <div></div>
+                    <div class="formRegistro">
+                <form name="modificar" action="save" method="POST">
+                    <input type="text" name="Nomnre Completo" value="Nombre Completo*" />
+                    <br>
+                    <br>
+                    <input type="text" name="Correo" value="Correo Electronico*" />
+                    <br>
+                    <br>
+                    <input type="text":focus {color:red} name="Tefelono" value="Número Teléfonico*" />
+                    <br>
+                    <br>
+                    <input type="password" name="Contraseña" value="Contraseña*" />
+                    <br>
+                    <br>
+                    <input type="text" name="Numero de Tarjeta" value="Número de Tarjeta" />
+                    <br>
+                    <br>
+                    <input type="text" name="Nombre en la Tarjeta" value="Nombre en la Tarjeta" />
+                    <br>
+                    <br>
+                    <input type="submit" value="Modificar Información" name="Modificar Informacion" />
+                </form>
+            </div>
     </body>
 </html>

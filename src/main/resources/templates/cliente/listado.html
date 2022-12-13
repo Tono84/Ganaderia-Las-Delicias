@@ -1,0 +1,45 @@
+<html xmlns:th="http://www.thymelead.org">
+    <head>
+        <title>Ganaderia las Delicias</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <header/>
+        <h2>Listado de Clientes</h2>
+        <br>
+        <a th:href="@{/nuevoCliente}">Nuevo Cliente</a>
+        <br>
+        <div th:if='${clientes != null and !clientes.empty}'>
+        <table border="1">
+                    <th>Nombre:</th>
+                    <th>Apellidos:</th>
+                    <th>Correo:</th>
+                    <th>Telefono:</th>
+                    <th>Usuario:</th>
+                    <th>Contraseña:</th>
+                    <th>Número de Tarjeta:</th>
+                    <th>Nombre en la Tarjeta:</th>
+                    <th>Eliminar</th>
+                    <th>Modificar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each='item: ${clientes}'>
+                    <td th:text='${item.nombre}'></td>
+                    <td th:text='${item.apellidos}'></td>
+                    <td th:text='${item.correo}'></td>
+                    <td th:text='${item.telefono}'></td>
+                    <td th:text='${item.usuario}'></td>
+                    <td th:text='${item.password}'></td>
+                    <td th:text='${item.tarjeta_numero}'></td>
+                    <td th:text='${item.tarjeta_nombre}'></td>
+
+                </tr>
+            </tbody>
+        </table>
+        <div th:if="${clientes == null or clientes.empty}">
+            La lista de clientes esta vacia
+        </div>
+        <footer/>
+    </body>
+</html>
