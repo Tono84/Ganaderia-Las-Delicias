@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"> 
+    <head>
+        <title>Clientes</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/css/menu.css" rel="stylesheet" type="text/css"/>  
+    </head>
+    <body>
+            <header class="header">
+                <nav class="nav">
+                    <a href="/" class="logo nav-link">Ganaderia las Delicias</a>
+                    <ul class="nav-menu">
+                        <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="/">Inicio</a></li>
+                        <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="paquetes.html">Paquetes</a></li>
+                        <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="contactenos.html">Contactenos</a></li> 
+                        <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="mapa.html"><img src="/icons/marcador-de-posicion.png" alt=""/></a></li>
+                        <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="perfil.html"><img src="/icons/hombre.png" alt=""/></a></li>
+                        <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="/cliente/nuevo"><img src="icons/nuevo.png" alt=""/></a></li>
+                    </ul>
+                </nav>
+            </header> 
+        <div>
+            <h2>Datos del Cliente</h2>
+            <br/>
+            <br/>
+        </div>
+        <div>
+            <form class="formRegistro" th:action="@{/cliente/guardar}" method="post" th:object="${cliente}">
+                <input type="hidden" name="idCliente" th:field="*{idCliente}"/>
+                <label for="nombre">Nombre: </label>
+                <input type="text" name="nombre" th:field="*{nombre}" />            
+                <br>            
+                <label for="apellidos">Apellidos: </label>            
+                <input type="text" name="apellidos" th:field="*{apellidos}" />            
+                <br>            
+                <label for="correo">Correo: </label>            
+                <input type="email" name="correo" th:field="*{correo}" />            
+                <br>            
+                <label for="tel">Teléfono: </label>            
+                <input type="tel" name="tel" th:field="*{telefono}" />            
+                <br>    
+                <label for="usuario">Usuario </label>            
+                <input type="usuario" name="usuario" th:field="*{usuario}" />         
+                <br> 
+                <label for="password">password </label>            
+                <input type="password" name="password" th:field="*{password}" />         
+                <br> 
+                <label for="tarjeta_numero">Número de Tarjeta </label>            
+                <input type="text" name="tarjeta_numero" th:field="*{tarjeta_numero}" />         
+                <br> 
+                <label for="tarjeta_nombre">Nombre en la Tarjeta </label>            
+                <input type="text" name="tarjeta_nombre" th:field="*{tarjeta_nombre}" />         
+                <br>           
+                <input type="hidden" name="rol" th:field="*{rol}" value="CLIENTE"/>         
+                <br> 
+                <input type="submit" name="Guardar" value="Guadar" />        
+            </form>   
+        </div> 
+        <footer></footer>
+    </body>
+</html>

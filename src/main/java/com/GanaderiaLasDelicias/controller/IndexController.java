@@ -23,6 +23,12 @@ public class IndexController {
     @Autowired
     private ClienteService clienteService;
 
+    @RequestMapping("/")
+    public String incio(Model model){
+//       model.addAllAttributes("atribute","value");
+       return "index";
+    }
+    
  @GetMapping("/cliente/listado")
     public String inicio(Model model) {
         var clientes=clienteService.getClientes();
@@ -41,7 +47,7 @@ public class IndexController {
     @PostMapping("/cliente/guardar")
     public String guardarCliente(Cliente cliente) {
         clienteService.save(cliente);
-        return "redirect:/cliente/listado";
+        return "index";
     }
 
     @GetMapping("/cliente/modificar/{idCliente}")

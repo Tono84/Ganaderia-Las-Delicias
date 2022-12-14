@@ -7,7 +7,7 @@
         <header/>
         <h2>Listado de Clientes</h2>
         <br>
-        <a th:href="@{/nuevoCliente}">Nuevo Cliente</a>
+        <a href="/cliente/nuevo">Nuevo Cliente</a>
         <br>
         <div th:if='${clientes != null and !clientes.empty}'>
         <table border="1">
@@ -19,6 +19,7 @@
                     <th>Contraseña:</th>
                     <th>Número de Tarjeta:</th>
                     <th>Nombre en la Tarjeta:</th>
+                    <th>Rol:</th>
                     <th>Eliminar</th>
                     <th>Modificar</th>
                 </tr>
@@ -33,6 +34,7 @@
                     <td th:text='${item.password}'></td>
                     <td th:text='${item.tarjeta_numero}'></td>
                     <td th:text='${item.tarjeta_nombre}'></td>
+                    <td th:text='${item.rol}'></td>
 
                 </tr>
             </tbody>
